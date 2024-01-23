@@ -19,9 +19,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export function generateMetadata({ params }: Props): Metadata {
   const meta = tracks.find(i => i.slug === params.slug);
-  return {
-    title: meta?.title
+  const d: Metadata = {
+    title: meta?.title,
+    openGraph: {
+      title: meta?.title,
+      images: meta ? [
+        getDataUrl(meta?.slug, 'cover.png')
+      ] : undefined
+    }
   }
+  return d;
 }
 
 
@@ -35,15 +42,13 @@ export default function Page({ params }: Props) {
   return <html >
     <body className={inter.className} style={{ background: meta.bg, color: meta.fg }}>
 
+      <MediaSession track={meta} />
 
-      <main className="flex min-h-screen flex-col items-center gap-10 p-4 py-10">
+      <main className="flex h-[100vh] flex-col items-center justify-center gap-10 p-4 py-10">
 
-        <MediaSession track={meta} />
-
-
-        <img src={getDataUrl(slug, 'cover.png')} alt="" className='max-w-[60vw]' />
-
-
+        <div className='flex-initial h-[400px]'>
+          <img src={getDataUrl(slug, 'cover.png')} alt="" className='h-full w-auto object-contain aspect-square' />
+        </div>
 
         <h1 className='text-center'>{meta.title}</h1>
 
