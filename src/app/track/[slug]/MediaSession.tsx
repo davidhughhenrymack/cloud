@@ -1,6 +1,6 @@
 "use client"
 
-import { Track } from "@/constants";
+import { Track } from "@/tracks";
 import { useEffect } from "react";
 
 

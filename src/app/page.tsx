@@ -1,4 +1,4 @@
-import { tracks } from "@/constants";
+import { getDataUrl, tracks } from "@/tracks";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export default function Home() {
 
       {tracks.map((track) => <div key={track.slug}>
         <Link href={`/track/${track.slug}`}>
-          <Image src={`/track-files/${track.slug}/cover.png`} alt={track.title} width={300} height={300} />
+          <Image src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
         </Link>
       </div>)}
     </main>
