@@ -32,18 +32,17 @@ export default function Page({ params }: Props) {
 
   if (!meta) return <p>Track not found :(</p>;
 
-  return <html style={{ background: meta.bg, color: meta.fg }}>
-    <body className={inter.className}>
+  return <html >
+    <body className={inter.className} style={{ background: meta.bg, color: meta.fg }}>
 
 
-      <main className="flex min-h-screen flex-col items-center gap-10 p-4" style={{ background: meta.bg, color: meta.fg }}>
+      <main className="flex min-h-screen flex-col items-center gap-10 p-4 py-10">
 
         <MediaSession track={meta} />
 
-        <div className='max-w-[400px]'>
-          <img src={getDataUrl(slug, 'cover.png')} alt="" className='max-w-[100%]' />
 
-        </div>
+        <img src={getDataUrl(slug, 'cover.png')} alt="" className='max-w-[60vw]' />
+
 
 
         <h1>{meta.title}</h1>
