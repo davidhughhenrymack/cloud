@@ -14,7 +14,7 @@ export default function Home() {
 
       {tracks.map((track) => <div key={track.slug}>
         <Link href={`/track/${track.slug}`}>
-          <Image src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
+          <img src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
         </Link>
       </div>)}
     </main>
