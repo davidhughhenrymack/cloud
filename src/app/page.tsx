@@ -1,22 +1,25 @@
 import { getDataUrl, tracks } from "@/tracks";
-import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "DMACK"
-}
+import "./globals.css";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-10 p-24">
-      <h1>DMACK</h1>
+    <html >
+      <body className={inter.className}>
 
-      {tracks.map((track) => <div key={track.slug}>
-        <Link href={`/track/${track.slug}`}>
-          <img src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
-        </Link>
-      </div>)}
-    </main>
+        <main className="flex min-h-screen flex-col items-center gap-10 p-24">
+          <h1>DMACK</h1>
+
+          {tracks.map((track) => <div key={track.slug}>
+            <Link href={`/track/${track.slug}`}>
+              <img src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
+            </Link>
+          </div>)}
+        </main>
+      </body></html>
   );
+
 }

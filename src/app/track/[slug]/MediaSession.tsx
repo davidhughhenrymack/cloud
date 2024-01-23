@@ -1,20 +1,17 @@
 "use client"
 
-import { Track } from "@/tracks";
+import { Track, getDataUrl } from "@/tracks";
 import { useEffect } from "react";
 
 
 export function MediaSession({ track }: { track: Track }) {
 
     useEffect(() => {
-
-        const coverSrc = `/track-files/${track.slug}/cover.png`;
-
         navigator.mediaSession.metadata = new MediaMetadata({
             title: track.title,
             artist: 'DMACK',
             album: '',
-            artwork: [{ src: coverSrc }]
+            artwork: [{ src: getDataUrl(track.slug, 'cover.png') }]
         });
 
     }, [track.slug]);
