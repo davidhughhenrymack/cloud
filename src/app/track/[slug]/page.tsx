@@ -45,7 +45,7 @@ export default function Page({ params }: Props) {
 
 
 
-        <h1>{meta.title}</h1>
+        <h1 className='text-center'>{meta.title}</h1>
 
         <audio controls autoPlay>
           <source src={getDataUrl(slug, 'track.mp3')} type="audio/mpeg" />
