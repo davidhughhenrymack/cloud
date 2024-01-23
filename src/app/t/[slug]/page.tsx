@@ -56,11 +56,14 @@ export default function Page({ params }: Props) {
 
         <div className="fixed top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center gap-8 p-4 z-10">
 
-          <div className='flex-initial h-[400px]'>
-            <img src={cover} alt="" className='h-full w-auto object-contain aspect-square rounded-lg' />
-          </div>
 
-          <div className='flex flex-col gap-1'>
+          <Link href="/" className='flex gap-2 opacity-20 hover:opacity-100'><ArrowLeftIcon className='h-6 w-6' /> Back</Link>
+
+
+          <img src={cover} alt="" className='w-[300px] md:w-[400px] rounded-lg' />
+
+
+          <div className='flex flex-col gap-1 items-center'>
             <h1 className='text-center'>{meta.title}</h1>
             <div className='flex gap-2 text-xs lowercase opacity-60'>
               {meta.tags?.map(tag => <span key={tag}>#{tag}</span>)}
@@ -72,8 +75,6 @@ export default function Page({ params }: Props) {
             Your browser does not support the audio element.
           </audio>
 
-
-          <Link href="/" className='flex gap-2 opacity-20 hover:opacity-100 fixed top-6 left-4'><ArrowLeftIcon className='h-6 w-6' /> Back</Link>
 
 
         </div>
