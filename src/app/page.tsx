@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <html >
-      <body className={inter.className}>
+    <html>
+      <body className={inter.className} style={{ background: "#112", color: "white" }}>
 
-        <main className="flex min-h-screen flex-col items-center gap-10 p-24">
+        <main className="flex min-h-screen flex-col items-center gap-6 p-6">
           <h1>DMACK</h1>
 
           {tracks.map((track) => <div key={track.slug}>
