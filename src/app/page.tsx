@@ -14,7 +14,7 @@ export default function Home() {
           <h1>DMACK</h1>
 
           {tracks.map((track) => <div key={track.slug}>
-            <Link href={`/track/${track.slug}`}>
+            <Link href={`/t/${track.slug}`}>
               <img src={getDataUrl(track.slug, 'cover.png')} alt={track.title} width={300} height={300} />
             </Link>
           </div>)}
