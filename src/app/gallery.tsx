@@ -45,6 +45,7 @@ const slides = shuffle([
 
 import PhotoAlbum from "react-photo-album";
 import { useState } from "react";
+import AlbumNextJsImage from "@/components/AlbumNextJsImage";
 
 export default function Gallery() {
   const [index, setIndex] = useState(-1);
@@ -55,6 +56,7 @@ export default function Gallery() {
         photos={slides}
         targetRowHeight={150}
         onClick={({ index: current }) => setIndex(current)}
+        renderPhoto={AlbumNextJsImage}
       />
 
       <Lightbox
