@@ -62,7 +62,11 @@ export default function Gallery() {
         slides={slides}
         open={index >= 0}
         close={() => setIndex(-1)}
-        render={{ slide: NextJsImage, thumbnail: NextJsImage }}
+        render={{
+          slide: NextJsImage,
+          thumbnail: ({ slide, rect }) =>
+            NextJsImage({ slide, rect, offset: -1 }),
+        }}
         plugins={[Thumbnails]}
       />
     </div>
