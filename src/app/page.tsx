@@ -134,8 +134,8 @@ export default function Home() {
                 Party Parrot
               </a>
               , which listens to the music and improvises a lighting design,
-              across an unlimited array of fixtures, including LED, floods,
-              moving heads, motion, bars, and lasers.
+              across an unlimited array of fixtures, including LED floods,
+              moving heads, motion bars, and lasers.
             </p>
           </section>
 
