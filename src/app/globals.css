@@ -2,15 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+html {
+  color: #c5c1e9;
+  background-color: #272521;
+}
+
+section {
+  margin-bottom: 3em;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 30em;
+}
+
+p {
+  font-family: var(--font-anonymous-pro), monospace;
+  font-size: 16pt;
+  line-height: 1.41;
+  letter-spacing: 1%;
+  margin-bottom: 1ex;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+}
+
 h1 {
-  font-size: 24pt;
-  font-weight: bold;
+  font-family: var(--font-anton), sans-serif;
+  font-size: 15pt;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #d2d1e6;
+  text-transform: uppercase;
+  margin-bottom: 0.9ex;
 }
