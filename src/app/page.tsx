@@ -131,8 +131,8 @@ export default function Home() {
             <br />
 
             <p>
-              I care most about meaningfully bringing together community and
-              experiencing things, beautiful, mysterious and sublime together.
+              I care most about meaningfully bringing together community to
+              experience the beautiful, mysterious and sublime.
             </p>
 
             <p>
@@ -149,11 +149,14 @@ export default function Home() {
           <section>
             <h1>Bookings</h1>
             <p>
-              I am actively looking for interesting, creative projects to take
+              I am actively looking for interesting creative projects to take
               on. Feel free to get in touch, it&apos;s always exciting to talk
               to new people.
             </p>
-            <p>I can provide lighting, dj and sound systems for events.</p>
+            <p>
+              I can provide lighting, dj and sound systems for events, as well
+              as graphic design.
+            </p>
             <p>
               <a href="https://www.instagram.com/davidhughhenrymack">
                 @davidhughhenrymack
