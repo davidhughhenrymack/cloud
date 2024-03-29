@@ -80,6 +80,14 @@ export default function Home() {
                 <div key={track.url}>
                   <a href={track.url} target="_blank">
                     <Image
+                      className="md:hidden"
+                      src={track.image}
+                      alt={track.title}
+                      width={130}
+                      height={130}
+                    />
+                    <Image
+                      className="hidden md:block"
                       src={track.image}
                       alt={track.title}
                       width={150}
