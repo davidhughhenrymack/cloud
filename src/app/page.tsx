@@ -82,8 +82,8 @@ export default function Home() {
                     <Image
                       src={track.image}
                       alt={track.title}
-                      width={200}
-                      height={200}
+                      width={150}
+                      height={150}
                     />
                   </a>
                 </div>

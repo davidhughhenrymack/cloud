@@ -17,15 +17,15 @@ section {
   margin-bottom: 3em;
   margin-left: 15px;
   margin-right: 15px;
-  max-width: 30em;
+  max-width: 35em;
 }
 
 p {
   font-family: var(--font-anonymous-pro), monospace;
-  font-size: 16pt;
-  line-height: 1.41;
+  font-size: 14pt;
+  line-height: 1.31;
   letter-spacing: 1%;
-  margin-bottom: 1ex;
+  margin-bottom: 3ex;
 }
 
 a {
@@ -38,7 +38,7 @@ a:hover {
 
 h1 {
   font-family: var(--font-anton), sans-serif;
-  font-size: 15pt;
+  font-size: 16pt;
   font-weight: normal;
   letter-spacing: 1px;
   color: #d2d1e6;
