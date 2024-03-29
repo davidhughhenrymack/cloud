@@ -97,7 +97,6 @@ export default function Home() {
             </p>
 
             <br />
-            <br />
 
             <p>
               My first love is house music, and frequently when I&apos;m
@@ -118,8 +117,9 @@ export default function Home() {
 
             <p>
               I care most about meaningfully bringing together community and
-              experiencing things, beautiful, mysterious and sublime together. 
+              experiencing things, beautiful, mysterious and sublime together.
             </p>
+
             <p>
               I&apos;ve been developing a lighting control system,{" "}
               <a href="https://github.com/davidhughhenrymack/party-parrot">
@@ -138,6 +138,7 @@ export default function Home() {
               on. Feel free to get in touch, it&apos;s always exciting to talk
               to new people.
             </p>
+            <p>I can provide lighting, dj and sound systems for events.</p>
             <p>
               <a href="https://www.instagram.com/davidhughhenrymack">
                 @davidhughhenrymack
