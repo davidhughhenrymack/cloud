@@ -54,6 +54,13 @@ const tracks: Track[] = [
 
 import { StaticImageData } from "next/image";
 import Gallery from "./gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "DMACK",
+  description:
+    "David Mack is a multi-disciplinary creative who loves bringing people together for fun and meaningful experiences",
+};
 
 export default function Home() {
   return (
