@@ -66,7 +66,7 @@ export default function Home() {
 
           <section>
             <p>
-              Based in Truckee California, David Mack is a multi disciplinary
+              Based in Truckee California, David Mack is a multi-disciplinary
               creative who loves bringing people together for fun and meaningful
               experiences
             </p>
