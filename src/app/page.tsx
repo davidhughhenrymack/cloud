@@ -4,7 +4,7 @@ import { Anonymous_Pro, Anton } from "next/font/google";
 import Image from "next/image";
 
 const anonymousPro = Anonymous_Pro({
-  weight: "400",
+  weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-anonymous-pro",
 });
@@ -55,6 +55,7 @@ const tracks: Track[] = [
 import { StaticImageData } from "next/image";
 import Gallery from "./gallery";
 import { Metadata } from "next";
+import Emailer from "@/components/Emailer";
 
 export const metadata: Metadata = {
   title: "DMACK",
@@ -158,10 +159,15 @@ export default function Home() {
               as graphic design.
             </p>
             <p>
-              <a href="https://www.instagram.com/davidhughhenrymack">
+              <a
+                href="https://www.instagram.com/davidhughhenrymack"
+                className="flex gap-2"
+              >
+                <img src="/img/insta.svg" width="20" height="20" />
                 @davidhughhenrymack
               </a>
             </p>
+            <Emailer />
           </section>
         </main>
       </body>
